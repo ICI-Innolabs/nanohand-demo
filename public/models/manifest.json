@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "accessedAt": "2026-10-18",
+  "package": {
+    "name": "@mediapipe/tasks-vision",
+    "version": "0.10.35",
+    "registry": "https://registry.npmjs.org/@mediapipe/tasks-vision/0.10.35",
+    "integrity": "sha512-HOvadwVRE6JC+45nyYhmnywnr5h/J8KZvOeUNVOG9q/0875pZgItznFB9bRTvLc264YSJqiZ1NsIpCStJw/egg==",
+    "license": "Apache-2.0"
+  },
+  "model": {
+    "name": "hand_landmarker.task",
+    "version": "float16/1",
+    "url": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+    "path": "models/hand_landmarker.task",
+    "bytes": 7819105,
+    "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1",
+    "license": "Apache-2.0",
+    "licenseEvidence": "https://storage.googleapis.com/mediapipe-assets/Model%20Card%20Hand%20Tracking%20(Lite_Full)%20with%20Fairness%20Oct%202021.pdf",
+    "licenseNote": "Official task overview links this model card; page 2 explicitly states Apache License Version 2.0. The card predates the versioned task bundle and does not bind its license statement to a file digest."
+  },
+  "wasm": [
+    {
+      "name": "vision_wasm_internal.js",
+      "path": "wasm/vision_wasm_internal.js",
+      "bytes": 322044,
+      "sha256": "e7fd9858e8e8f221d9b96eddc11f8e077f263e0b7bbd79d3cbe882b134274f8c"
+    },
+    {
+      "name": "vision_wasm_internal.wasm",
+      "path": "wasm/vision_wasm_internal.wasm",
+      "bytes": 11153617,
+      "sha256": "6a5c64584c2ab61c763b6e204afbdbc7ce1caf7f5216187322bca8df94f646bc"
+    },
+    {
+      "name": "vision_wasm_module_internal.js",
+      "path": "wasm/vision_wasm_module_internal.js",
+      "bytes": 322082,
+      "sha256": "1f1d6215324a1fe62f6742d49a3db911170987ca18ad8c1b75f1a1c82acf2b44"
+    },
+    {
+      "name": "vision_wasm_module_internal.wasm",
+      "path": "wasm/vision_wasm_module_internal.wasm",
+      "bytes": 11153641,
+      "sha256": "617b8e0248dbd27e9d7ece4218004eae4cefb499196d1bb4fa0e3fef21708756"
+    },
+    {
+      "name": "vision_wasm_nosimd_internal.js",
+      "path": "wasm/vision_wasm_nosimd_internal.js",
+      "bytes": 321847,
+      "sha256": "438d1fe8ff7f4d946025bc211c291543c037d8a3785ed4eee60f1f521b236296"
+    },
+    {
+      "name": "vision_wasm_nosimd_internal.wasm",
+      "path": "wasm/vision_wasm_nosimd_internal.wasm",
+      "bytes": 10481398,
+      "sha256": "8a3092d34c79d3f57e6ba8592105e8a90f6b07c27891ffecd14cca428bfd3e31"
+    }
+  ]
+}
