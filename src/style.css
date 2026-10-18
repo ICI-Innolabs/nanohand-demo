@@ -53,6 +53,8 @@ h1 { font-size: 28px; line-height: 1.2; letter-spacing: -.03em; }
 .quiet-label { color: var(--muted); font-size: 12px; }
 .icon-button { display: inline-flex; align-items: center; gap: 7px; min-height: 44px; background: transparent; color: var(--muted); padding: 8px 0 8px 8px; font-size: 12px; border-radius: 6px; }
 .icon-button:hover { color: #fff; }
+.github-link { justify-content: center; width: 44px; padding: 10px; }
+.github-link svg { width: 24px; height: 24px; }
 .camera-viewport, .model-viewport { position: relative; height: clamp(340px, 52vh, 620px); }
 .camera-viewport { display: flex; align-items: center; justify-content: center; padding: 28px; overflow: hidden; background: #0c131e; }
 .camera-empty { position: relative; max-width: 300px; text-align: center; }
