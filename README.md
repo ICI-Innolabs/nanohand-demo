@@ -56,7 +56,7 @@ Deploy the whole `dist/` directory, including `models/`, `wasm/` and `THIRD_PART
 - MediaPipe Tasks Vision is deliberately pinned to **0.10.35** with matching verified assets. The previously evaluated 1.1.1 emitted a post-Stop metrics request and was rejected. Re-run the full network privacy suite, including shutdown, before changing the pin; blocking requests is not proof of no telemetry.
 - GPU initialization/inference failure falls back to CPU. If workers are unavailable, main-thread CPU capture is capped at 15 Hz and can affect responsiveness. Actual backend information is in Troubleshooting.
 - Single RGB-camera tracking is approximate. Occlusion, low light, foreshortening, fast motion and handedness errors reduce quality. Thumb opposition is an approximation, not measured CMC rotation. No numerical joint-accuracy claim is made.
-- Preserve [`public/THIRD_PARTY_NOTICES.txt`](public/THIRD_PARTY_NOTICES.txt). The SDK declares Apache-2.0. The linked model card predates the versioned task bundle and does not bind its license statement to this exact digest; review the [model-license provenance gap](docs/research.md) before redistribution/commercial deployment. No original Nano Hand mesh or third-party photograph is bundled.
+- No original Nano Hand mesh or third-party photograph is bundled.
 
 ## Historical evidence and standalone benchmark
 
@@ -72,3 +72,9 @@ npm run benchmark
 ```
 
 It downloads a digest-verified official sample photograph into memory and measures real CPU/GPU worker inference at 320/640/960 px, independently of the application viewer. The source image is 640 px, so 960 px is upscaled. This is not a physical-camera or camera-to-photon benchmark. A successful run overwrites ignored `benchmark-result.json`; it does not replace committed `docs/benchmark-data.json`.
+
+## License
+
+Original project code is available under the [MIT License](LICENSE.md).
+
+Bundled third-party assets retain their upstream licenses. Preserve [`THIRD_PARTY_NOTICES.txt`](public/THIRD_PARTY_NOTICES.txt) when redistributing. The MediaPipe SDK declares Apache-2.0. The linked model card predates the versioned task bundle and does not bind its license statement to the exact bundled digest; review the license evidence in the [asset manifest](public/models/manifest.json) before redistribution/commercial deployment.
